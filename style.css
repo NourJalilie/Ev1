@@ -5,10 +5,11 @@
   padding: 0;
 }
 img{
-  width: 100px;
+  width: 150px;
   display: block; 
   margin: 0 auto;
   border-radius: 400px;
+  box-shadow:2px 10px 10px black;
 }
 :root {
   --mostrando: #842715;
@@ -44,19 +45,24 @@ code {
       border-radius: 4px;
 }
 
-h1, h2{
+h1{
     font-family: "Galindo", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color:#FFF6EB;
 }
 
-h1{
-  color:#FFF6EB;
-  hover: black;
+h1:hover{
+  transition: all ease 1.5s;
+  color: #310800;
 }
 
 h2{
   color:#310800;
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#FFF6EB;
 }
 
 p{
