@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100px;
+  display: block; 
+  margin: 0 auto;
+  border-radius: 400px;
+}
+:root {
+  --mostrando: #842715;
+  --esperando: #FFF6EB;
+  --flotando: #310800;
+}
+
+body{
+  background: #310800;
+  color: #FFF6EB;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(90% - 2rem), 500px);
+    height:auto;
+    padding: 1rem;
+    margin: auto;
+    background: rgba(132, 97, 21);
+    box-shadow: 0 0 50px black;
+    border-radius: .5rem;
+    z-index: 9999;
+}
+
+code {
+      background-color: #FFF6EB;   
+      color: #842715;              
+      padding: 1px 1px;            
+      border-radius: 4px;
+}
+
+h1, h2{
+    font-family: "Galindo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+  color:#FFF6EB;
+  hover: black;
+}
+
+h2{
+  color:#310800;
+}
+
+p{
+  padding:0.5rem 0;
+}
+
+.acotacion{
+  font-size: 10px;
+}
+a{
+  color: #842715;
+}
+
+.link {
+  background-color: #F1FAEE;   
+  color: #842715;              
+  padding: 1px 1px;            
+  border-radius: 4px;
+}
+
+nav{
+  margin:1rem 0;  
+}
+
+nav a{
+  line-height: 1;
+  text-decoration: none;
+  color:#310800;
+  margin:0 1rem 0 0;
+  padding:0.3rem 1rem;
+  background:var(--esperando);
+  border-radius: .6rem;
+  transition:all ease .75s;
+}
+
+nav a:hover{
+  color:#FFF6EB;
+  background:var(--flotando);  
+  transition:all ease .75s;
+}
+
+nav a.active{
+  color:#FFF6EB;
+  background:var(--mostrando);
+}
